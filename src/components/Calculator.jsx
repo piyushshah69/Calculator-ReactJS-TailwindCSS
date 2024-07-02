@@ -42,6 +42,7 @@ const reducer = (state, {type, payload}) => {
                     currentOperand: null,
                 }
             }
+            // eslint-disable-next-line eqeqeq
             if (state.currentOperand == null || state.currentOperand == 0) {
                 return state
             }

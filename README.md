@@ -1,6 +1,7 @@
 # React JS Calculator Application
 
 This is a React JS calculator application built with `npx create-react-app`.
+[Live preview](https://calculator-reactjs-tailwind.netlify.app/)
 
 ## Getting Started
 
