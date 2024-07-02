@@ -133,8 +133,8 @@ const Calculator = () => {
             </div>
             <div className='flex flex-col gap-[2px]'>
                 <div className='grid grid-cols-4 gap-[2px]'>
-                    <button className="p-4  bg-gray-700" onClick={()=>{dispatch({type: ACTIONS.CLEAR_ALL})}}>AC</button>
-                    <button className="p-4  bg-gray-700" onClick={() => { dispatch({ type: ACTIONS.DELETE_LAST }) }}>CE</button>
+                    <button className="p-4 bg-gray-700 hover:opacity-80" onClick={()=>{dispatch({type: ACTIONS.CLEAR_ALL})}}>AC</button>
+                    <button className="p-4 bg-gray-700 hover:opacity-80" onClick={() => { dispatch({ type: ACTIONS.DELETE_LAST }) }}>CE</button>
                     <OperatorButton operator='%' dispatch={dispatch} />
                     <OperatorButton operator='÷' dispatch={dispatch} />
                 </div>
@@ -159,7 +159,7 @@ const Calculator = () => {
                 <div className='grid grid-cols-4 gap-[2px]'>
                     <DigitButton digit='0' dispatch={dispatch} />
                     <DigitButton digit='.' dispatch={dispatch} />
-                    <button className="p-4 col-span-2 bg-gray-700" onClick={() => { dispatch({ type: ACTIONS.EVALUATE }) }}>=</button>
+                    <button className="p-4 col-span-2 bg-gray-700 hover:opacity-80" onClick={() => { dispatch({ type: ACTIONS.EVALUATE }) }}>=</button>
                 </div>
             </div>
         </div>

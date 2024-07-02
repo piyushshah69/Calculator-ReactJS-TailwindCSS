@@ -4,7 +4,7 @@ import '../output.css'
 
 const OperatorButton = ({ dispatch, operator }) => {
     return (
-        <button className="p-4 bg-yellow-500"
+        <button className="p-4 bg-yellow-500 hover:bg-opacity-90"
             onClick={() => { dispatch({ type: ACTIONS.OPERATOR, payload: { operator } }) }}>
             {operator}
         </button>
